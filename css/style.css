@@ -1,0 +1,147 @@
+body {
+    font-family: "微軟正黑體";
+}
+
+.indexBody {
+    background-attachment: fixed;
+    background-image: url("../img/index_backgroundd.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 0px;
+}
+
+.sidebar-section {
+    /* border: 1px solid #ddd; */
+    border-top: 0;
+}
+
+.category-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.card-img-top {
+    height: 180px;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-price {
+    color: red;
+}
+
+.card {
+    float: left;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.good-img {
+    /* height: 255px;
+    width: 255px; */
+    display: block;
+    margin: auto;
+
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.good-name {
+    color: #006AB4;
+}
+
+.sub-category-menu {
+    display: none;
+    /* display: block; */
+    padding: 5px;
+    position: absolute;
+    left: 170px;
+    width: 160px;
+    z-index: 2;
+    top: -6px;
+}
+
+.carousel {
+    width: 648px;
+    height: 360px;
+}
+
+.list-group-item>a{
+    font-size: 20px;
+}
+
+/* login start */
+/* W3圖片全螢幕教學 https://www.w3schools.com/howto/howto_css_full_page.asp */
+body,
+html {
+    height: 100%;
+}
+
+.login {
+    background-image: url("../img/login-background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.loginDiv {
+    margin: auto;
+}
+
+.col {
+    background-color: wheat;
+    text-align: center;
+}
+
+.btnSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+
+.Register,
+.login {
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-form input {
+    float: right;
+}
+
+/* login end */
+
+/* fav start */
+.fav-img {
+    width: 128px;
+    height: 128px;
+    float: left;
+    /* position:inherit;
+    left: 0px; */
+}
+
+/* fav end */
+
+/* Cart start */
+.cart-img {
+    width: 160px;
+    height: 160px;
+    float: left;
+}
+
+.cart-item {
+    float: left;
+}
+
+/* Cart end */

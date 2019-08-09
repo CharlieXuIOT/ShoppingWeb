@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Favorite</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- 自訂義CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 自訂義JS -->
+    <script src="js/good.js"></script>
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="container">
+        <nav>
+
+            <!-- <div class="col-sm-12"> -->
+            <a class="navbar-brand mt-1 ml-2" href="index.html" style="width: auto; float: left;">
+                <div>
+                    <i class="fas fa-shopping-bag"></i>
+                    <label>買買買</label>
+                </div>
+            </a>
+            <!-- </div> -->
+
+            <!-- !!! 15.7螢幕比例小時縮成一個icon尚未編寫 !!! -->
+
+            <!-- 搜尋商品 -->
+            <!-- !!! btn和text的結合方法 !!! -->
+            <div class="SearchBar col-sm-6" style="float: left;">
+                <form action="">
+                    <input type="text" style="width: 300px; height: 36px;" class="form-controll mt-3" name=""
+                        id="ProductSearch" placeholder="搜尋商品">
+                    <button class="btn btn-primary" type="submit" style="margin: -5px">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+
+            <div class="ml-auto col-sm-4" style="margin: 0px">
+                <a href="login.html" class="btn btn-primary my-2">登入</a>
+                <a href="favorite.html" class="btn btn-primary my-2">我的最愛</a>
+                <a href="cart.html" class="btn btn-primary my-2">購物車</a>
+                <a href="record.html" class="btn btn-primary my-2 ">購買紀錄</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- header end -->
+
+    <!-- 中間區塊 start -->
+    <section class="page-content">
+        <div class="container pt-4 pb-4">
+            <div class="row">
+                <div class="col-12">
+                    <h4>我的最愛</h4>
+                    <p>顯示第 1 項 - 第 1 項，共 1 項商品</p>
+                </div>
+                <div class="container col-12 row">
+                    <div class="col-6 col-sm-6">
+                        <hr>
+                        <div>
+                            <a href="good.html">
+                                <img class="fav-img mr-3" src="img/1-1.jpg">
+                                <p>(刷卡分期)Apple iPhone X 64G (空機) 全新福利機</p>
+                            </a>
+                            <p class="card-price">NT$&nbsp;35000</p>
+                            <div>
+                                <button class="btn btn-primary text-white" onclick="addCart()">
+                                    <i class="fas fa-shopping-cart"></i> 加入購物車
+                                </button>
+                                <button class="btn btn-secondary text-white" onclick="removeGood()">
+                                    <i class="fas fa-trash-alt"></i> 移除
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 頁數 -->
+
+                <!-- <div class="col-12 mt-5">
+                    <h4>精選推薦</h4>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- 中間區塊 end -->
+</body>
+
+</html>
